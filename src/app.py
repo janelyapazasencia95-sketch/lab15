@@ -26,12 +26,16 @@ def main():
     app_name = config["app"]["name"]
     message = config["app"]["message"]
     debug = config["app"].getboolean("debug")
+    version = config["app"]["version"]
+    log_level = config["app"]["log_level"]
 
     print("==============================")
     print(f"Aplicación : {app_name}")
     print(f"Entorno    : {env}")
     print(f"Mensaje    : {message}")
     print(f"Debug      : {debug}")
+    print(f"Versión    : {version}")
+    print(f"Log level  : {log_level}")
     print("==============================")
 
 
